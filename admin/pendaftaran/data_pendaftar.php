@@ -1,3 +1,4 @@
+<h1>Data Pendaftar</h1>
 <table width="650" border="1">
 	<tr id="jtabel">
 		<td width="40">No.</td>
