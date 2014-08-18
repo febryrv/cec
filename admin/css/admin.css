@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-size: 62.5%;
+	font-family: "Trebuchet MS", "Arial", "Helvetica", "Verdana", "sans-serif";
+	
+}
+
+table {
+	font-size: 12px;
+	width:780px;
+	border:1px solid #CCC;
+	border-collapse:collapse;
+}
+
+#jtabel{height:30px; background-color:#CCC; text-align:center;}
+
+.demo-description {
+	clear: both;
+	padding: 12px;
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
+#container{font-size:12px; font-family:Georgia, "Times New Roman", Times, serif; width:900px; margin:0 auto;}
+#header{width:1000px; height:50px; background-color:#2E9FFE; text-align:center; padding:2px 0 0 0; color:#FFF;}
+
+/* ----- Untuk merubah menu yang berada di atas dimulai dari sini ----- */
+#menu{width:1000px; height:30px; margin:5px 0 0 0;}
+#menu ul{ margin:0; padding:0;}
+#menu ul li{list-style:none; height:18px; background-color:#09C; padding:2px 0 0 0; float:left; margin:0 3px  0 0; }
+#menu ul li a{text-decoration:none; color:#fafafa; height:10px;  padding:0 5px 0 5px;}
+#menu ul li a:hover{color:#006; }
+/* ----- sampai sini ----- */
+
+
+/* ----- Untuk merubah sidebar atau menu yang berada di sebelah kanan dimulai dari sini ----- */
+#sidebar{width:200px; float:right;}
+#sidebar ul{ margin:0; padding:0;}
+#sidebar ul li{list-style:none; height:18px; background-color:#fafafa; border-left:#09C 5px solid; padding:2px 0 0 0; margin:0 0 3px 0; }
+#sidebar ul li a{text-decoration:none; color:#039; height:10px; padding:0 0 0 5px;}
+#sidebar ul li:hover{background-color:#39F;}
+/* ----- sampai sini ----- */
+
+#content{width:1000px; margin:0 0 20px 0;}
+#c-isi{width:700px; float:left;}
+#footer{width:1000px; height:50px; border-top:#666 1px solid; text-align:center; padding:5px 0 0 0;}
+.error-message{background:red;padding:5px;}
