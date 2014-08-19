@@ -1,5 +1,4 @@
 *.pdf
 *.txt
-*.sql
 _backup/
 config/koneksi.php
