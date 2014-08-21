@@ -13,16 +13,23 @@ input[name]{height:30px; padding:0;}
 #button{background-color:#09F; border:#F90 1px solid; color:#FFF; height:30px; width:100px; margin:5px;}
 #button:hover{background-color:#0CF;}
 .error {background: red;}
+body {
+	background-image: url(images/c1.png);
+}
 </style>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <form id="form1" name="form1" method="post" action="">
-    <table width="244" border="0" align="center">
-		<tr>
+<p>&nbsp;</p>
+<table width="244" border="0" align="center">
+	  <tr>
 			<td width="236" align="center" id="judul">Login Administrator
 			<?php echo isset($err_login) ? '<p class="error">'.$err_login.'</p>' : ''; ?>
 			</td>
 		</tr>
 		<tr>
-			<td>Username</td>
+			<td><h2><strong>Username</strong></h2></td>
 		</tr>
 		<tr>
 			<td>
@@ -31,7 +38,7 @@ input[name]{height:30px; padding:0;}
 			</td>
 		</tr>
 		<tr>
-			<td>Password</td>
+			<td><h3><strong>Password</strong></h3></td>
 		</tr>
 		<tr>
 			<td>

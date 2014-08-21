@@ -106,12 +106,12 @@ define ('PDF_AUTHOR', 'TCPDF');
 /**
  * Header title.
  */
-define ('PDF_HEADER_TITLE', "Bimbingan Belajar 'EOC'");
+define ('PDF_HEADER_TITLE', "Lembaga Kursus dan Bimbel CEC'");
 
 /**
  * Header description string.
  */
-define ('PDF_HEADER_STRING', "Jl. Sutera Raya Km. 8 \nAlam Sutera - Serpong .\nwww.eoc.com");
+define ('PDF_HEADER_STRING', "Jl.Melati 1 Block E4 No.20 Pasar Kemis Tangerang .\nwww.infocecokay.com");
 
 /**
  * Document unit of measure [pt=point, mm=millimeter, cm=centimeter, in=inch].

@@ -17,8 +17,8 @@ include 'config/koneksi.php';
 		<div class="wrap">
 			<div class="header">
 				<div class="logo">
-					<a href=""><img src="assets/images/logo.png" alt="" border="0" /></a>
-				</div>
+					<a href=""><img src="assets/images/clogo.png" alt="" width="357" height="97" border="0" /></a>
+</div>
 				<div id="menu">
 					<ul>
 						<li class="<?php if(!isset($_GET['pg']) || isset($_GET['pg']) && $_GET['pg'] == '') echo 'selected'; ?>"><a href="index.php">home</a></li>
@@ -49,7 +49,7 @@ include 'config/koneksi.php';
 						<p class="info"> 008 900 800 32   /    008 900 800 32 </p>
 					</div>
 					<div class="footer_copyrights">
-						<img src="assets/images/footer_logo.gif" alt="" /><br />
+<img src="assets/images/pic1.jpg" alt="" width="272" height="69" /><br />
 						&copy; <?php echo date('Y'); ?> All Rights Reserved<br />
 						Develop by: <a href="http://facebook.com/febri_rv">Febry_rv</a>
 					</div>

@@ -137,7 +137,7 @@ include '../config/koneksi.php';
 			</div>
 			<div style="clear:both;"></div>
 		</div>
-		<div id="footer">Copyright&copy;Bimbel 'EOC' | <?php echo date('Y'); ?></div>
+		<div id="footer">Copyright&copy;LembagaKursus&amp;Bimbel 'CEC' | <?php echo date('Y'); ?></div>
 	</div>
 </body>
 </html>

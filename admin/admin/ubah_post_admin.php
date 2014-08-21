@@ -74,6 +74,8 @@ if ($_POST)
 
 		if ($ubah)
 		{
+			$_SESSION['my_user']	= $_POST['user'];
+			$_SESSION['my_email'] 	= $_POST['email'];
 			?>
 			<script type="text/javascript">
 				alert('Data Berhasil Diubah');
