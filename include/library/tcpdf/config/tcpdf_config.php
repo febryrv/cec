@@ -106,7 +106,7 @@ define ('PDF_AUTHOR', 'TCPDF');
 /**
  * Header title.
  */
-define ('PDF_HEADER_TITLE', "Lembaga Kursus dan Bimbel CEC'");
+define ('PDF_HEADER_TITLE', "Lembaga Kursus dan Bimbel Creative Education Course");
 
 /**
  * Header description string.

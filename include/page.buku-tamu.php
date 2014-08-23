@@ -114,26 +114,26 @@ if($_POST)
 		<h1>Hubungi Kami</h1>
 		<div class="contact_info">
 			<span class="orange">Alamat:</span>
-			<p class="info_contact">Jl. Sutera Raya No. 23, Alam Sutera</p>
+			<p class="info_contact">Bumi Ps.Kemis Indah Jl. Melati 1 Block E4 No.20 Tangerang</p>
 		</div>
 		<div class="contact_info">
 			<span class="orange">Email:</span>
-			<p class="info_contact"> info@eoc.com </p>
+			<p class="info_contact">cecokay@yahoo.co.id</p>
 		</div>
 		<div class="contact_info">
 			<span class="orange">Telp:</span>
-			<p class="info_contact"> 008 900 800 32   /    008 900 800 32 </p>
+			<p class="info_contact">0856 9163 3930</p>
 		</div>
 		<div class="employe_box_left">
-			<span class="blue">Febrian</span><br />
-			<span class="orange">Email:</span> info@eoc.com<br />
-			<span class="orange">Telp:</span> 008 900 800 32 <br />
+			<span class="blue">Mr.awang Setiaji, S.Pd</span><br />
+<span class="orange">Email:</span>cecokay@gmail.com<br />
+		  <span class="orange">Telp:</span><span class="info_contact">0856 9163 3930</span><br />
 			<img src="assets/images/contact_thumb1.gif" alt="" /> 
 		</div>
 		<div class="employe_box_right">
-			<span class="blue">Sumanto</span><br />
-			<span class="orange">Email:</span> info@eoc.com<br />
-			<span class="orange">Telp.:</span> 008 900 800 32 <br />
+        <span class="blue">Mrs.Niken, S.Pd</span><br />
+	    <span class="orange">Email:</span><span class="info_contact">cecokay@yahoo.id</span><br />
+			<span class="orange">Telp.:</span> 0821 1186 9843<br />
 			<img src="assets/images/contact_thumb2.gif" alt="" />
 		</div>
     </div>
