@@ -111,7 +111,7 @@ define ('PDF_HEADER_TITLE', "Lembaga Kursus dan Bimbel Creative Education Course
 /**
  * Header description string.
  */
-define ('PDF_HEADER_STRING', "Jl.Melati 1 Block E4 No.20 Pasar Kemis Tangerang .\nwww.infocecokay.com");
+define ('PDF_HEADER_STRING', "Jl.Melati 1 Block E4 No.20 Pasar Kemis Tangerang .\nwww.bimbelcec.com");
 
 /**
  * Document unit of measure [pt=point, mm=millimeter, cm=centimeter, in=inch].
