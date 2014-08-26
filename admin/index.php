@@ -100,6 +100,7 @@ include '../config/koneksi.php';
 			<ul>
 				<li><a href="index.php">Beranda</a></li>
 				<li><a href="?pg=pendaftaran/data_pendaftar">Pendaftaran</a></li>
+				<li><a href="?pg=jadwal/data_jadwal">Jadwal</a></li>
 				<li><a href="?pg=admin/data_admin">Atur Account</a></li>
 				<li><a href="?pg=content/data_content">Edit Tentang Kami</a></li>
 				<li><a href="?pg=kontak/data_kontak">Edit Buku Tamu</a></li>
