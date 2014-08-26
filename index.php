@@ -40,14 +40,14 @@ include 'config/koneksi.php';
 			<div class="footer_content">
 				<div class="footer_tab1">
 					<h2>Hubungi Kami</h2>
-					<span class="email">Email: info@oec.com</span>
+					<span class="email">Email: ceceokay@yahoo.co.id</span>
 					<div class="footer_info"> <span class="orange">Alamat:</span>
-						<p class="info"> Jl. Gatot Subroto Km. 8 </p>
+						<p class="info"> Bumi Ps.Kemis  Jl. Melati 1 E4 No.20</p>
 					</div>
 					<div class="footer_info">
 						<span class="orange">Telepon:</span>
-						<p class="info"> 008 900 800 32   /    008 900 800 32 </p>
-					</div>
+						<p class="info">0856 9163 3930</p>
+				  </div>
 					<div class="footer_copyrights">
 <img src="assets/images/pic1.jpg" alt="" width="272" height="69" /><br />
 						&copy; <?php echo date('Y'); ?> All Rights Reserved<br />
