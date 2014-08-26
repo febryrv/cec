@@ -1,15 +1,13 @@
 <?php
 include 'slide/ubah_post_slide.php';
 ?>
+<h1>Ubah Home Slide</h1>
 <form action="" method="post" enctype="multipart/form-data" name="form1">
 	<table width="441" border="1" align="center">
    <?php
-	$data = mysql_query("select * from slider where id = '$_GET[id]'");
+	$data	= mysql_query("select * from slider where id = '$_GET[id]'");
 	$tampil = mysql_fetch_array($data);
 	?>
-		<tr>
-			<td colspan="3">Ubah Home Slider</td>
-		</tr>
 		<tr>
 			<td width="314">Judul</td>
 			<td width="8">:</td>

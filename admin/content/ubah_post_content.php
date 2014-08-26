@@ -6,12 +6,11 @@ if ($_POST)
 	{
 		$error 	= true;
 		$e_nama = 'Judul harus diisi.';
-	}
-	
+	}	
 	if ($_POST['isi'] == '')
 	{
 		$error 	= true;
-		$e_isi = 'Isi artikel harus diisi.';
+		$e_isi 	= 'Isi artikel harus diisi.';
 	}
 	
 	if (!$error)
@@ -20,23 +19,19 @@ if ($_POST)
 
 		if(empty($file))
 		{
-			$ubah = mysql_query("UPDATE artikel
+			$ubah = mysql_query("UPDATE tentang_kami
 			SET judul_artikel = '$_POST[nama]',
-				update_terakhir = '".date('Y-m-d')."',
-				isi_artikel = '$_POST[isi]' 
-			WHERE id_artikel = '$_GET[id]'
-			");
+				isi_artikel = '$_POST[isi]',
+				update_terakhir = CURRENT_TIMESTAMP");
 		}
 		else
 		{
-			$ubah = mysql_query("UPDATE artikel SET 
-			SET judul_artikel = '$_POST[nama]',
-				update_terakhir = '$_POST[tanggal]',
-				isi_artikel = '$_POST[isi]',
-				gambar = '$file'
-				isi_artikel = '$_POST[isi]'
-			WHERE isi_artikel = '$_GET[id]'");
-			$move=move_uploaded_file($_FILES['gambar']['tmp_name'], '../uploads/gambar/'.$file);
+			$ubah = mysql_query("UPDATE tentang_kami
+			SET judul = '$_POST[nama]',
+				isi = '$_POST[isi]',
+				gambar = '$file',
+				update_terakhir = CURRENT_TIMESTAMP");
+			$move = move_uploaded_file($_FILES['gambar']['tmp_name'], '../uploads/gambar/'.$file);
 		}
 		if($ubah)
 		{

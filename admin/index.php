@@ -101,26 +101,17 @@ include '../config/koneksi.php';
 				<li><a href="index.php">Beranda</a></li>
 				<li><a href="?pg=pendaftaran/data_pendaftar">Pendaftaran</a></li>
 				<li><a href="?pg=admin/data_admin">Atur Account</a></li>
-				<li><a href="?pg=content/data_content">Tentang Kami</a></li>
-				<li><a href="?pg=kontak/data_kontak">Buku Tamu</a></li>
-				<li><a href="?pg=slide/data_slide">Home</a></li>
-				<!--<li><a href="?pg=gallery/data_gallery">Atur Gallery</a></li>-->
-				<li><a href="logout.php">Keluar</a></li>
+				<li><a href="?pg=content/data_content">Edit Tentang Kami</a></li>
+				<li><a href="?pg=kontak/data_kontak">Edit Buku Tamu</a></li>
+				<li><a href="?pg=slide/data_slide">Edit Home</a></li>
 			</ul>
 		</div>
 		<div id="content">
-			<!--
 			<div id="sidebar">
-			  <ul>
-				  <li><a href="?pg=admin/data_admin">Atur Account</a></li>
-				  <li><a href="?pg=content/data_content">Atur Content</a></li>
-				  <li><a href="?pg=kontak/data_kontak">Atur Kontak</a></li>
-				  <li><a href="?pg=slide/data_slide">Atur Slide</a></li>
-				  <li><a href="?pg=gallery/data_gallery">Atur Gallery</a></li>
-				  <li><a href="logout.php">Keluar</a></li>
-			  </ul>
+				<ul>
+					<li><a href="logout.php">Log Out</a></li>
+				</ul>
 			</div>
-			-->
 			<div id="c-isi">
 			<?php
 				if(isset($_GET['li']))

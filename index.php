@@ -17,7 +17,7 @@ include 'config/koneksi.php';
 		<div class="wrap">
 			<div class="header">
 				<div class="logo">
-					<a href=""><img src="assets/images/clogo.png" alt="" width="357" height="97" border="0" /></a>
+					<a href="index.php"><img src="assets/images/clogo.png" alt="" width="357" height="97" border="0" /></a>
 </div>
 				<div id="menu">
 					<ul>

@@ -1,4 +1,4 @@
-<!--<a href="?pg=slide/input_slide" class="klik">Tambah Slide</a><br />--><br />
+<h1>Home Slide</h1>
 <table width="650" border="1">
   <tr id="jtabel">
     <td width="45">No.</td>
