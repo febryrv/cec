@@ -1,9 +1,8 @@
 <?php
-
 function simpan_buku_tamu($nama, $email, $telepon, $pesan)
 {
-	$sql = "INSERT INTO buku_tamu(nama, email, telepon, pesan)
-		VALUES ('$nama', '$email', '$telepon', '$pesan')";
+	$sql = "INSERT INTO buku_tamu(nama, email, telepon, pesan, tanggal)
+		VALUES ('$nama', '$email', '$telepon', '$pesan', CURRENT_TIMESTAMP)";
 	
 	return mysql_query($sql);
 }
@@ -80,7 +79,7 @@ if($_POST)
 <div class="main_content">
     <div class="left_content">
 		<h1>Buku Tamu</h1>
-		<?php echo (isset($success) && $success == true) ? '<p>Pesan Anda sukses terkirim.</p>' : ''; ?>
+		<?php echo (isset($success) && $success == true) ? '<p>Pesan Anda sukses terkirim. Kami akan segera meresponya.</p>' : ''; ?>
 		<div class="contact_form">
 			<form method="post" >
 			<div class="form_row">
