@@ -79,8 +79,13 @@ if ($action == '') :
 		
 		if ($_POST['tlp'] == '')
 		{
-			$err = true;
-			$err_tlp = 'Telepon harus diisi.';
+			$err 		= true;
+			$err_tlp 	= 'Telepon harus diisi.';
+		}
+		elseif (!is_numeric($_POST['tlp']))
+		{
+			$err 		= true;
+			$err_tlp 	= 'Telepon harus diisi dengan angka.';
 		}
 		else
 		{
@@ -150,16 +155,6 @@ if ($action == '') :
 		else
 		{
 			$email = $_POST['email'];
-		}
-		
-		if ($_POST['kode_program'] == '')
-		{
-			$err 			= true;
-			$err_program 	= 'Setidaknya pilih salah satu program kursus.';
-		}
-		else
-		{		
-			$kode_program	= $_POST['kode_program'];
 		}
 		
 		//var_dump($_FILES['foto']);
