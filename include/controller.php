@@ -15,6 +15,9 @@ switch($pg)
 	case 'buku-tamu' :
 		include 'include/page.buku-tamu.php';
 		break;
+	case 'siswa' :
+		include 'include/page.siswa.php';
+		break;
 	default :
 		include 'include/404.php';
 		break;

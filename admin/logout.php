@@ -4,6 +4,6 @@ session_unset();
 session_destroy();
 ?>
 <script type="text/javascript">
-alert('terima kasih');
-document.location = 'login.php'
+alert('Terima kasih');
+document.location = 'login.php';
 </script>

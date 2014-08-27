@@ -1,6 +1,7 @@
 <?php
+session_start();
 include 'config/koneksi.php';
-
+include 'include/redirection.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -25,7 +26,11 @@ include 'config/koneksi.php';
 						<li class="<?php if(isset($_GET['pg']) && $_GET['pg'] == 'tentang-kami') echo 'selected'; ?>"><a href="?pg=tentang-kami">tentang kami</a></li>
 						<li class="<?php if(isset($_GET['pg']) && $_GET['pg'] == 'pendaftaran') echo 'selected'; ?>"><a href="?pg=pendaftaran">pendaftaran</a></li>
 						<li class="<?php if(isset($_GET['pg']) && $_GET['pg'] == 'buku-tamu') echo 'selected'; ?>"><a href="?pg=buku-tamu">buku tamu</a></li>
-						<li><a href="">login siswa</a></li>
+						<?php if (isset($_SESSION['nis'])) : ?>
+							<li class="<?php if(isset($_GET['pg']) && $_GET['pg'] == 'siswa') echo 'selected'; ?>"><a href="?pg=siswa"><?php echo $_SESSION['nama']; ?></a></li>
+						<?php else : ?>
+							<li><a href="?pg=siswa&do=login">login siswa</a></li>
+						<?php endif; ?>
 					</ul>
 				</div>
 			</div>
