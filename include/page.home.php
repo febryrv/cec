@@ -20,7 +20,7 @@ $i		= 1;
 		<ul class="center_button_icons tabset">
 			<li id="icon1"> <a href="?pg=tentang-kami" class="tab"> <img src="assets/images/c4.png" alt="" width="120" height="120" border="0" /> </a> </li>
 			<li id="icon2"> <a href="?pg=pendaftaran" class="tab"> <img src="assets/images/c3.png"  alt="" width="120" height="120" border="0"/> </a> </li>
-			<li id="icon3"> <a href="#tab3" class="tab"> <img src="assets/images/c5.png" alt="" width="120" height="120" border="0" /> </a> </li>
+			<li id="icon3"> <a href="?pg=siswa&do=login" class="tab"> <img src="assets/images/c5.png" alt="" width="120" height="120" border="0" /> </a> </li>
 		</ul>
 	</div>
 </div>
