@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 26, 2014 at 02:43 PM
+-- Generation Time: Sep 04, 2014 at 08:56 AM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.4.3
 
@@ -165,7 +165,7 @@ CREATE TABLE IF NOT EXISTS `siswa` (
 --
 
 INSERT INTO `siswa` (`nis`, `nama`, `foto`, `kode_program`, `jenis_kelamin`, `agama`, `email`, `password`, `alamat`, `kota_lahir`, `tanggal_lahir`, `sekolah`, `kelas`, `hobi`, `cita`, `tlp`, `ayah`, `ibu`, `pekerjaanayah`, `pekerjaanibu`, `tanggal_daftar`) VALUES
-('1411.1010.02', 'Mark Sunkar', './uploads/foto/FORM.1410.1101.04-deddy.jpg', '0010', 'Laki-laki', 'Islam', 'setoelkahfi@gmail.com', '207895aca50dc68c490c07b2d9a25ac9', 'Perumahan Cluster Mutiara Curug 2\r\nBlok J/16\r\nCukanggalih - Curug\r\n15810', 'Kebumen', '1992-09-10', 'SMK N 2 Kebumen', '11', 'Maiin bola', 'Astronot', '085715227992', '', '', '', '', '2014-07-24 03:00:16'),
+('1411.1010.02', 'Mark Sunkar', './uploads/foto/FORM.1410.1101.04-deddy.jpg', '0010', 'Laki-laki', 'Islam', 'setoelkahfi@gmail.com', '207895aca50dc68c490c07b2d9a25ac9', 'Perumahan Cluster Mutiara Curug 2\r\nBlok J/16\r\nCukanggalih - Curug\r\n15810', 'Kebumen', '1992-09-10', 'SMK N 2 Kebumen', '11', 'Maiin bola', 'Astronot', '121212121', '', '', '', '', '2014-07-24 03:00:16'),
 ('1411.1010.01', 'Qorizon', './uploads/foto/FORM.1410.1111.03-poni.jpg', '0010', 'Laki-laki', 'Islam', 'setoelkahfi@propanraya.com', '207895aca50dc68c490c07b2d9a25ac9', 'Perumahan Cluster Mutiara Curug 2\r\nBlok J/16\r\nCukanggalih - Curug\r\n15810', 'Kebumen', '1992-09-10', 'SMK N 2 Kebumen', '11', 'Maiin bola', 'Astronot', '085715227992', '', '', '', '', '2014-07-24 02:36:40');
 
 -- --------------------------------------------------------
@@ -211,7 +211,7 @@ CREATE TABLE IF NOT EXISTS `tentang_kami` (
 --
 
 INSERT INTO `tentang_kami` (`id`, `judul`, `isi`, `gambar`, `update_terakhir`) VALUES
-(1, 'Tentang Kami', '<p>Ini adalah tentang kami</p>', 'FORM.1402.0100.03-pic2.jpg', '2014-08-26 02:46:27');
+(1, 'Tentang Kami', '<p>Ini adalah tentang kami.</p>', 'building_150x70_02.gif', '2014-08-28 12:55:24');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
