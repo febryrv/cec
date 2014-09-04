@@ -11,6 +11,7 @@ function do_login($nis, $password)
 		$data 				= mysql_fetch_assoc($Q);
 		$_SESSION['nis'] 	= $data['nis'];
 		$_SESSION['nama'] 	= $data['nama'];
+		$_SESSION['email'] 	= $data['email'];
 		?>
 		<script>
 		alert('Thanks for logging in.');
