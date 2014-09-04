@@ -7,11 +7,12 @@
 		$tampil = mysql_fetch_array($data);
 		?>
 		<tr>
-			<td width="31">Nama</td>
-			<td width="8">:</td>
+			<td width="31" valign="top">Nama</td>
+			<td width="8" valign="top">:</td>
 			<td width="197">
 				<input type="text" name="nama" id="nama" value="<?php echo $tampil['nama'];?>">
-				<input type="hidden" name="kode_program" id="kode_program" value="<?php echo $tampil['kode_program'];?>">
+				<input type="hidden" name="kode_program" id="kode_program" value="<?php echo $tampil['kode_program'];?>">				
+				<?php echo isset($e_nama) ? '<p class="error-message">'.$e_nama.'</p>' : ''; ?>
 			</td>
 		</tr>
 		<tr>
@@ -19,6 +20,7 @@
 			<td valign="top">:</td>
 			<td>
 				<textarea name="jadwal" id="jadwal"><?php echo $tampil['jadwal'];?></textarea>
+				<?php echo isset($e_jadwal) ? '<p class="error-message">'.$e_jadwal.'</p>' : ''; ?>
 			</td>
 		</tr>
 		<tr>

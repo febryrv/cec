@@ -5,12 +5,12 @@ if ($_POST)
 	if ($_POST['nama'] == '')
 	{
 		$error 	= true;
-		$e_nama = 'Nama harus diisi.';
+		$e_nama = 'Nama kursus harus diisi.';
 	}	
 	if ($_POST['jadwal'] == '')
 	{
-		$error 	= true;
-		$e_jadwal 	= 'Jadwal harus diisi.';
+		$error 		= true;
+		$e_jadwal 	= 'Jadwal kursus harus diisi.';
 	}
 	
 	if (!$error)
