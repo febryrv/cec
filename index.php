@@ -24,7 +24,9 @@ include 'include/redirection.php';
 					<ul>
 						<li class="<?php if(!isset($_GET['pg']) || isset($_GET['pg']) && $_GET['pg'] == '') echo 'selected'; ?>"><a href="index.php">home</a></li>
 						<li class="<?php if(isset($_GET['pg']) && $_GET['pg'] == 'tentang-kami') echo 'selected'; ?>"><a href="?pg=tentang-kami">tentang kami</a></li>
-						<li class="<?php if(isset($_GET['pg']) && $_GET['pg'] == 'pendaftaran') echo 'selected'; ?>"><a href="?pg=pendaftaran">pendaftaran</a></li>
+						<?php if (!isset($_SESSION['nis'])) : ?>
+							<li class="<?php if(isset($_GET['pg']) && $_GET['pg'] == 'pendaftaran') echo 'selected'; ?>"><a href="?pg=pendaftaran">pendaftaran</a></li>
+						<?php endif; ?>
 						<li class="<?php if(isset($_GET['pg']) && $_GET['pg'] == 'buku-tamu') echo 'selected'; ?>"><a href="?pg=buku-tamu">buku tamu</a></li>
 						<?php if (isset($_SESSION['nis'])) : ?>
 							<li class="<?php if(isset($_GET['pg']) && $_GET['pg'] == 'siswa') echo 'selected'; ?>"><a href="?pg=siswa"><?php echo $_SESSION['nama']; ?></a></li>
