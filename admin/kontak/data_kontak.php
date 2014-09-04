@@ -25,7 +25,7 @@ if (mysql_num_rows($data) > 0) :
 			<td><?php echo $tampil['telepon'];?></td>
 			<td><?php echo $view;?></td>
 			<td><?php echo $tampil['tanggal'];?></td>
-			<td><a href="?pg=kontak/lihat_kontak&id=<?php echo $tampil['id'];?>" class="klik">Balas</a> <a href="?pg=kontak/ubah_kontak&id=<?php echo $tampil['id'];?>" class="klik">Ubah</a> <a href="?pg=kontak/hapus_kontak&id=<?php echo $tampil['id'];?>" class="klik" onclick="return confirm('Data Akan Dihapus?')">Hapus</a></td>
+			<td><a href="?pg=kontak/lihat_kontak&id=<?php echo $tampil['id'];?>" class="klik">Balas</a> <a href="?pg=kontak/hapus_kontak&id=<?php echo $tampil['id'];?>" class="klik" onclick="return confirm('Data Akan Dihapus?')">Hapus</a></td>
 		</tr>
 <?php 
 	endwhile;

@@ -12,16 +12,13 @@ if ($_POST)
 		$body_mail = '<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8" /></head><body>
 		'.$_POST['pesan'].'
 		<br>
-		------------------------------
-		'.$_POST['pesan_'].'
-		<p>Silahkan login <a href="http://bimbelcec.com/?pg=siswa&do=login">disini</a>.</p>
 		</body></html>';
 				$headers = "From: admin@bimbelcec.com\r\n";
 				$headers .= "Reply-to: admin@bimbelcec.com\r\n";
 				$headers .= "Content-type: text/html";
 				if ((isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] == 'www.bimbelcec.com' || $_SERVER['HTTP_HOST'] == 'bimbelcec.com')) || $_SERVER['SERVER_NAME'] == 'www.bimbelcec.com' || $_SERVER['SERVER_NAME'] == 'bimbelcec.com')
 				{
-					$mail_sent = mail($_POST['email'], "Reply - Bimbel CEC", $body_mail, $headers);
+					$mail_sent = mail($_POST['email'], "Reply: ".$_POST['email']." - Bimbel CEC", $body_mail, $headers);
 					echo '<script>alert("Email terkirim.");location="index.php?pg=kontak/data_kontak";</script>';
 				}
 				else
@@ -68,12 +65,13 @@ while($tampil = mysql_fetch_array($data))
 		<tr>
 		  <td valign="top">Pesan</td>
 		  <td valign="top">:</td>
-		  <td><?php echo $tampil['pesan'];?><input type="hidden" name="pesan_" value="<?php echo $tampil['pesan'];?>" /></td>
+		  <td><?php echo $tampil['pesan'];?></td>
 		</tr>
 		<tr>
 		  <td valign="top">Balas</td>
 		  <td valign="top">:</td>
-		  <td><textarea name="pesan" id="pesan" cols="45" rows="5"></textarea>
+		  <td><textarea name="pesan" id="pesan" cols="45" rows="5"><br><br><br><br>
+		  -----------------------------------------------------------------------------------------<br><?php echo $tampil['pesan'];?></textarea>
 				<?php echo isset($e_pesan) ? '<p class="error-message">'.$e_pesan.'</p>' : ''; ?></td>
 		</tr>
 		<tr>
